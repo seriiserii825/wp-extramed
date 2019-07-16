@@ -4,6 +4,7 @@
 */
 ?>
 
+
 <?php get_header(); ?>
 
 		<div class="container">
@@ -14,9 +15,9 @@
 							<li class="tit">
 								<h5><?php  echo carbon_get_theme_option('crb_timer_title'); ?></h5>
 							</li>
-							<li><span class="day">Luni - Vineri</span> <span class="divider">-</span> 
+							<li><span class="day">Luni - Vineri</span> <span class="divider">-</span>
 								<span class="time">
-									<?php  echo substr(carbon_get_theme_option('crb_monday_start'), 0, 5); ?> - 
+									<?php  echo substr(carbon_get_theme_option('crb_monday_start'), 0, 5); ?> -
 									<?php  echo substr(carbon_get_theme_option('crb_monday_end'), 0, 5); ?>
 								</span>
 							</li>
@@ -24,7 +25,7 @@
 								<?php  echo substr(carbon_get_theme_option('crb_saturday_start'), 0, 5); ?> -
 								<?php  echo substr(carbon_get_theme_option('crb_saturday_end'), 0, 5); ?></span></li>
 							<li><span class="day">Duminica</span> <span class="divider">-</span> <span class="time">
-								<?php  echo substr(carbon_get_theme_option('crb_sunday_start'), 0, 5); ?> - 
+								<?php  echo substr(carbon_get_theme_option('crb_sunday_start'), 0, 5); ?> -
 								<?php  echo substr(carbon_get_theme_option('crb_sunday_end'), 0, 5); ?></span>
 							</li>
 						</ul>
@@ -39,12 +40,12 @@
 		<div class="tp-banner-container">
 			<div class="tp-banner">
 				<ul>
-					<?php $slider_images = carbon_get_theme_option('crb_slider_item'); ?>
+					<?php $slider_images = carbon_get_the_post_meta('crb_slider_item'); ?>
 
 					<?php foreach($slider_images as $image): ?>
 
-						<?php 
-							$image_id = $image['crb_slider_image']; 
+						<?php
+							$image_id = $image['crb_slider_image'];
 							$image_url = kama_thumb_src( ['width'  => 1920, 'height' => 900], $image_id );
 						?>
 
@@ -79,9 +80,9 @@
 							'posts_per_page' => -1,
 						]); ?>
 
-						<?php if ( $amb_stat_posts->have_posts() ) : ?> 
+						<?php if ( $amb_stat_posts->have_posts() ) : ?>
 							<?php $i = 0; while ( $amb_stat_posts->have_posts() ) : $amb_stat_posts->the_post(); ?>
-								<?php 
+								<?php
 									$category = get_the_category();
 									$category_name = $category[0]->name;
 								?>
@@ -134,10 +135,10 @@
 						<ul>
                             <?php if($guid_posts->have_posts()): ?>
                                 <?php while($guid_posts->have_posts()): ?>
-									<?php 
+									<?php
 										$category = get_the_category();
 										$category_name = $category[0]->name;
-										$category_name_short = substr($category_name, 0, 3); 
+										$category_name_short = substr($category_name, 0, 3);
 									?>
                                     <?php $guid_posts->the_post(); ?>
 										<li><a><?php the_title(); ?> (<?php echo $category_name_short; ?>)</a></li>
@@ -172,7 +173,7 @@
                                                 <div class="detail">
                                                     <div class="detail__content">
 	                                                    <h4>
-	                                                    	<?php echo carbon_get_the_post_meta('crb_category_amb_stat_posts'); ?> 
+	                                                    	<?php echo carbon_get_the_post_meta('crb_category_amb_stat_posts'); ?>
                                                     	</h4>
 	                                                    <?php the_content(); ?>
                                                     </div>
@@ -226,7 +227,7 @@
 											'posts_per_page' => -1
 										]); ?>
 
-										<?php if ( $specialist_post->have_posts() ) : ?> 
+										<?php if ( $specialist_post->have_posts() ) : ?>
 											<?php while ( $specialist_post->have_posts() ) : $specialist_post->the_post(); ?>
 											<div class="post item">
 		                                    <?php
@@ -242,11 +243,11 @@
 													<div class="image-hover img-layer-slide-left-right">
 														<img src="<?php echo $img_url[0]; ?>" alt="">
 														<div class="layer">
-															<a class="galler-sec__icon" href="<?php echo $facebook_url; ?>">	
+															<a class="galler-sec__icon" href="<?php echo $facebook_url; ?>">
 																<i class="fab fa-facebook-f"></i>
 															</a>
-															<a class="galler-sec__icon" href="<?php echo $twitter_url; ?>">	
-																<i class="fab fa-twitter"></i> 
+															<a class="galler-sec__icon" href="<?php echo $twitter_url; ?>">
+																<i class="fab fa-twitter"></i>
 															</a>
 															<a class="galler-sec__icon" href="<?php echo $google_url; ?>">
 																<i class="fab fa-google"></i>

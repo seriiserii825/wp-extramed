@@ -76,7 +76,12 @@ $table_prefix = 'wp_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define( 'WP_DEBUG', false );
+
+define( 'WP_DEBUG', true );
+
+//Enable error logging.
+@ini_set('log_errors', 'On');
+@ini_set('error_log', 'F:/OSPanel/domains/wp-extramed.loc/wp-content/elm-error-logs/php-errors.log');
 
 /* Это всё, дальше не редактируем. Успехов! */
 

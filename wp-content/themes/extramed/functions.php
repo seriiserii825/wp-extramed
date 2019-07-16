@@ -7,6 +7,7 @@ require_once __DIR__.'/inc/carbon-fields/carbon-category-posts-meta.php';
 require_once __DIR__.'/inc/carbon-fields/carbon-specialist-post-type.php';
 require_once __DIR__.'/inc/carbon-fields/certificate-page.php';
 require_once __DIR__.'/inc/carbon-fields/prezentare-page.php';
+require_once __DIR__.'/inc/carbon-fields/carbon-principal-page.php';
 require __DIR__.'/classes/Primary_Menu_Walker.php';
 require __DIR__.'/classes/Mobile_Menu_Walker.php';
 require __DIR__.'/classes/MenuWidget.php';

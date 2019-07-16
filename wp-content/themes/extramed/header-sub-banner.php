@@ -120,33 +120,33 @@
 		 <!--Start Banner-->
    
 	   <div class="sub-banner">
-	   	<?php 
-		   	$img_id = carbon_get_theme_option('crb_subanner_img'); 
-            $img_url = wp_get_attachment_image_src($img_id, 'full');
-	   	?>
-	   
-	   	<img class="banner-img" src="<?php echo $img_url[0];?>" alt="">
-	    <div class="detail">
-	    	<div class="container">
-	        	<div class="row">
-	            	<div class="col-md-12">
-	                	
-	                    <div class="paging">
-                            <?php if(is_category()): ?>
-								<?php $category = get_the_category()[0]->name; ?>
-								<h2><?php echo $category; ?></h2>
-                                <?php elseif(is_page()): ?>
-                                <h2><?php the_title(); ?></h2>
-                            <?php endif; ?>
-							<ul>
-								<li><a href="<?php echo home_url(); ?>">Principala</a></li>
-							</ul>
-	                    </div>
-	                    
-	                </div>
-	            </div>
-	        </div>
-	    </div>
+			<?php
+				$img_id = carbon_get_theme_option('crb_subanner_img');
+				$img_url = wp_get_attachment_image_src($img_id, 'full');
+			?>
+
+			<img class="banner-img" src="<?php echo $img_url[0];?>" alt="">
+			<div class="detail">
+								   <div class="container">
+								   <div class="row">
+								   <div class="col-md-12">
+
+								   <div class="paging">
+								   <?php if(is_category()): ?>
+								   <?php $category = get_the_category()[0]->name; ?>
+								   <h2><?php echo $category; ?></h2>
+								   <?php elseif(is_page()): ?>
+								   <h2><?php the_title(); ?></h2>
+								   <?php endif; ?>
+								   <ul>
+								   <li><a href="<?php echo home_url(); ?>">Principala</a></li>
+								   </ul>
+								   </div>
+
+								   </div>
+								   </div>
+								   </div>
+								   </div>
 	   
 	   </div>
 	   

@@ -22,7 +22,9 @@
 			'link_after'      => '',
 			'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 			'depth'           => 0,
-			'walker'          => new Mobile_Menu_Walker(),
+//			'walker'          => new Mobile_Menu_Walker(),
         ]); ?>
+    </div>
+</div>
 
 <!-- Mobile Menu End -->
