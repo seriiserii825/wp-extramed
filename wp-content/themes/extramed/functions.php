@@ -1,4 +1,31 @@
 <?php
+
+if( ! defined('ABSPATH') ) exit;
+
+require_once __DIR__.'/inc/carbon-fields/carbon-fields.php';
+require_once __DIR__.'/inc/carbon-fields/carbon-category-posts-meta.php';
+require_once __DIR__.'/inc/carbon-fields/carbon-specialist-post-type.php';
+require_once __DIR__.'/inc/carbon-fields/certificate-page.php';
+require_once __DIR__.'/inc/carbon-fields/prezentare-page.php';
+require __DIR__.'/classes/Primary_Menu_Walker.php';
+require __DIR__.'/classes/Mobile_Menu_Walker.php';
+require __DIR__.'/classes/MenuWidget.php';
+require __DIR__.'/classes/LatestNews.php';
+require __DIR__.'/classes/ContactAddressWidget.php';
+require __DIR__.'/classes/ContactFormWidget.php';
+require_once __DIR__.'/inc/widgets.php';
+require_once __DIR__.'/inc/enqueue-style.php';
+require_once __DIR__.'/inc/post-type.php';
+require_once __DIR__.'/inc/taxonomy-specialist.php';
+require_once __DIR__.'/inc/excerpt.php';
+
+function vardump($var) {
+	echo '<pre>';
+	var_dump($var);
+	echo '</pre>';
+}
+
+add_filter( 'widget_text', 'do_shortcode' );
 /**
  * extramed functions and definitions
  *
@@ -44,7 +71,8 @@ if ( ! function_exists( 'extramed_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'extramed' ),
+			'primary_menu' => esc_html__( 'Primary', 'extramed' ),
+			'mobile_menu' => esc_html__( 'Mobile', 'extramed' ),
 		) );
 
 		/*

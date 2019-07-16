@@ -1,40 +1,104 @@
 <?php
-/**
- * The template for displaying all pages
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package extramed
- */
-
-get_header();
+get_header('sub-banner');
 ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+	<!--Start Content-->
+	<div class="content">
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
+		<div class="contact-us">
+			<div class="container">
 
-			get_template_part( 'template-parts/content', 'page' );
+				<div class="row">
+					<div class="col-md-12">
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+						<div class="our-location">
+                            <?php if(have_posts()): ?>
+                                    <?php the_post(); ?>
+									<?php the_content(); ?>
 
-		endwhile; // End of the loop.
-		?>
+                                <?php else: ?>
+                            <?php endif; ?>
+						</div>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+					</div>
+				</div>
+
+			</div>
+
+
+			<div class="leave-msg dark-back">
+				<div class="container">
+
+					<div class="rox">
+						<div class="col-md-7">
+
+							<div class="main-title">
+                                <?php
+                                    $title_1 = carbon_get_theme_option('crb_contacts_title_1');
+									$title_2 = carbon_get_theme_option('crb_contacts_title_2');
+									$title_3 = carbon_get_theme_option('crb_contacts_title_3');
+                                ?>
+								<h2><span><?php echo $title_1; ?></span> <?php echo $title_2; ?> <span><?php echo $title_3; ?></span></h2>
+							</div>
+
+							<div class="form">
+								<div class="row">
+                                    <?php echo do_shortcode('[contact-form-7 id="87" title="Contact-page-form"]'); ?>
+								</div>
+							</div>
+
+
+						</div>
+
+						<div class="col-md-5">
+
+							<div class="contact-get">
+								<div class="main-title">
+                                    <?php
+                                        $title_addres_1 = carbon_get_theme_option('crb_contacts_address_1');
+										$title_addres_2 = carbon_get_theme_option('crb_contacts_address_2');
+										$phone = carbon_get_theme_option('crb_phone');
+										$phone_clear = str_replace(['(',')','-','+'], '', $phone);
+										$email = carbon_get_theme_option('crb_email');
+										$address = carbon_get_theme_option('crb_address');
+										$facebook = carbon_get_theme_option('crb_facebook');
+										$twitter = carbon_get_theme_option('crb_twitter');
+										$google = carbon_get_theme_option('crb_google');
+										$vimeo = carbon_get_theme_option('crb_vimeo');
+                                    ?>
+									<h2><span><?php echo $title_addres_1; ?></span> <?php echo $title_addres_2; ?></h2>
+								</div>
+
+								<div class="get-in-touch">
+									<div class="detail">
+										<span><b>Telefon:</b> <a href="tel:<?php echo $phone_clear; ?>"><?php echo $phone; ?></a></span>
+										<span><b>Email:</b> <a href="<?php echo $email; ?>"><?php echo $email; ?></a></span>
+										<span><b>Adresa:</b> <?php echo $address;?></span>
+									</div>
+
+									<div class="social-icons">
+										<a href="<?php echo $facebook; ?>" class="fb"><i class="fab fa-facebook-f"></i></a>
+										<a href="<?php echo $twitter ?>" class="tw"><i class="fab fa-twitter"></i></a>
+										<a href="<?php echo $google; ?>" class="gp"><i class="fab fa-google-plus-g"></i></a>
+										<a href="<?php echo $vimeo; ?>" class="vimeo"><i class="fab fa-vimeo-v"></i></a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+
+	</div>
+	<!--End Content-->
+
 
 <?php
-get_sidebar();
 get_footer();
+

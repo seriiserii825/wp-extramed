@@ -1,58 +1,121 @@
-<?php
-/**
- * The header for our theme
- *
- * This is the template that displays all of the <head> section and everything up until <div id="content">
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package extramed
- */
-
-?>
-<!doctype html>
+<?php  ?>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
-<head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
 
+<head>
+	<!-- <title>Medical Guide</title> -->
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'extramed' ); ?></a>
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$extramed_description = get_bloginfo( 'description', 'display' );
-			if ( $extramed_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $extramed_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
+	<div id="wrap">
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'extramed' ); ?></button>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+		<!--Start PreLoader-->
+		<div id="preloader">
+			<div id="status">&nbsp;</div>
+			<div class="loader">
+				<h1>Loading...</h1>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<!--End PreLoader-->
 
-	<div id="content" class="site-content">
+		<!--Start Top Bar-->
+		<div class="top-bar">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5">
+						<span><?php bloginfo( 'description' ); ?></span>
+					</div>
+
+					<div class="col-md-7">
+						<div class="get-touch">
+							<ul>
+								<li>
+									<?php
+										$phone = carbon_get_theme_option('crb_phone');
+										$phone_clear = str_replace(['(',')','-','+'], '', $phone);
+									?>
+									<a href="tel:<?php echo $phone_clear; ?>">
+										<i class="fas fa-phone"></i>
+										<?php  echo $phone; ?>
+									</a>
+								</li>
+								<li>
+									<a href="mailto:<?php  echo carbon_get_theme_option('crb_email'); ?>">
+										<i class="far fa-envelope"></i>
+
+									<?php  echo carbon_get_theme_option('crb_email'); ?>
+									</a>
+								</li>
+							</ul>
+
+							<ul class="social-icons">
+								<li><a href="<?php echo carbon_get_theme_option('crb_facebook'); ?>" class="fb">
+									<i class="fab fa-facebook-f"></i>
+								</a></li>
+								<li><a href="<?php echo carbon_get_theme_option('crb_twitter'); ?>" class="tw">
+									<i class="fab fa-twitter"></i>
+								</a></li>
+								<li><a href="<?php echo carbon_get_theme_option('crb_google'); ?>" class="gp">
+									<i class="fab fa-google-plus-g"></i>
+								</a></li>
+							</ul>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!--Top Bar End-->
+		<!--Start Header-->
+
+		<header class="header">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-3">
+						<div class="header-logo">
+							<?php the_custom_logo();  ?>
+						</div>
+					</div>
+
+					<div class="col-md-9">
+
+						<?php wp_nav_menu( array(
+							'theme_location'  => 'primary_menu',
+							'container'       => 'nav',
+							'container_class' => 'menu-2',
+							'container_id'    => '',
+							'menu_class'      => 'nav wtf-menu',
+							'menu_id'         => '',
+							'echo'            => true,
+							'fallback_cb'     => 'wp_page_menu',
+							'before'          => '',
+							'after'           => '',
+							'link_before'     => '',
+							'link_after'      => '',
+							'items_wrap'      => '<ul id = "%1$s" class = "%2$s">%3$s</ul>',
+							'depth'           => 0,
+							'walker'          => new Primary_Menu_Walker(),
+						) ); ?>
+
+					</div>
+
+				</div>
+
+
+			</div>
+		</header>
+		<!--End Header-->
+
+        <?php get_template_part('template-parts/mobile', 'menu'); ?>
+
