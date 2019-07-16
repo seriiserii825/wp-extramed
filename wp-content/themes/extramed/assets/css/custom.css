@@ -388,3 +388,7 @@ ul.accordion li {
 .presentation-arrow .fas:hover {
 	color: black;
 }
+
+#accordion2 .time-table span.day {
+	width: 106px;
+}

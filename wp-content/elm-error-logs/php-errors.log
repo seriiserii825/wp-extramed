@@ -1,0 +1,56 @@
+[16-Jul-2019 17:21:47 UTC] PHP Notice:  Undefined offset: 0 in F:\OSPanel\domains\wp-extramed.loc\wp-content\themes\extramed\front-page.php on line 140
+[16-Jul-2019 17:21:47 UTC] PHP Stack trace:
+[16-Jul-2019 17:21:47 UTC] PHP   1. {main}() F:\OSPanel\domains\wp-extramed.loc\index.php:0
+[16-Jul-2019 17:21:47 UTC] PHP   2. require() F:\OSPanel\domains\wp-extramed.loc\index.php:17
+[16-Jul-2019 17:21:47 UTC] PHP   3. require_once() F:\OSPanel\domains\wp-extramed.loc\wp-blog-header.php:19
+[16-Jul-2019 17:21:47 UTC] PHP   4. include() F:\OSPanel\domains\wp-extramed.loc\wp-includes\template-loader.php:78
+[16-Jul-2019 17:21:47 UTC] PHP 
+[16-Jul-2019 17:21:47 UTC] PHP Dump $_SERVER
+[16-Jul-2019 17:21:47 UTC] PHP    $_SERVER['REMOTE_ADDR'] = '127.0.0.1'
+[16-Jul-2019 17:21:47 UTC] PHP    $_SERVER['REQUEST_METHOD'] = 'GET'
+[16-Jul-2019 17:21:47 UTC] PHP Dump $_SESSION
+[16-Jul-2019 17:21:47 UTC] PHP    $_SESSION['*'] is undefined
+[16-Jul-2019 17:21:47 UTC] PHP Dump $_REQUEST
+[16-Jul-2019 17:21:47 UTC] PHP 
+[16-Jul-2019 17:21:47 UTC] PHP Notice:  Trying to get property 'name' of non-object in F:\OSPanel\domains\wp-extramed.loc\wp-content\themes\extramed\front-page.php on line 140
+[16-Jul-2019 17:21:47 UTC] PHP Stack trace:
+[16-Jul-2019 17:21:47 UTC] PHP   1. {main}() F:\OSPanel\domains\wp-extramed.loc\index.php:0
+[16-Jul-2019 17:21:47 UTC] PHP   2. require() F:\OSPanel\domains\wp-extramed.loc\index.php:17
+[16-Jul-2019 17:21:47 UTC] PHP   3. require_once() F:\OSPanel\domains\wp-extramed.loc\wp-blog-header.php:19
+[16-Jul-2019 17:21:47 UTC] PHP   4. include() F:\OSPanel\domains\wp-extramed.loc\wp-includes\template-loader.php:78
+[16-Jul-2019 17:21:47 UTC] PHP 
+[16-Jul-2019 17:21:47 UTC] PHP Dump $_SERVER
+[16-Jul-2019 17:21:47 UTC] PHP    $_SERVER['REMOTE_ADDR'] = '127.0.0.1'
+[16-Jul-2019 17:21:47 UTC] PHP    $_SERVER['REQUEST_METHOD'] = 'GET'
+[16-Jul-2019 17:21:47 UTC] PHP Dump $_SESSION
+[16-Jul-2019 17:21:47 UTC] PHP    $_SESSION['*'] is undefined
+[16-Jul-2019 17:21:47 UTC] PHP Dump $_REQUEST
+[16-Jul-2019 17:21:47 UTC] PHP 
+[16-Jul-2019 17:26:37 UTC] PHP Notice:  Undefined offset: 0 in F:\OSPanel\domains\wp-extramed.loc\wp-content\themes\extramed\front-page.php on line 140
+[16-Jul-2019 17:26:37 UTC] PHP Stack trace:
+[16-Jul-2019 17:26:37 UTC] PHP   1. {main}() F:\OSPanel\domains\wp-extramed.loc\index.php:0
+[16-Jul-2019 17:26:37 UTC] PHP   2. require() F:\OSPanel\domains\wp-extramed.loc\index.php:17
+[16-Jul-2019 17:26:37 UTC] PHP   3. require_once() F:\OSPanel\domains\wp-extramed.loc\wp-blog-header.php:19
+[16-Jul-2019 17:26:37 UTC] PHP   4. include() F:\OSPanel\domains\wp-extramed.loc\wp-includes\template-loader.php:78
+[16-Jul-2019 17:26:37 UTC] PHP 
+[16-Jul-2019 17:26:37 UTC] PHP Dump $_SERVER
+[16-Jul-2019 17:26:37 UTC] PHP    $_SERVER['REMOTE_ADDR'] = '127.0.0.1'
+[16-Jul-2019 17:26:37 UTC] PHP    $_SERVER['REQUEST_METHOD'] = 'GET'
+[16-Jul-2019 17:26:37 UTC] PHP Dump $_SESSION
+[16-Jul-2019 17:26:37 UTC] PHP    $_SESSION['*'] is undefined
+[16-Jul-2019 17:26:37 UTC] PHP Dump $_REQUEST
+[16-Jul-2019 17:26:37 UTC] PHP 
+[16-Jul-2019 17:26:37 UTC] PHP Notice:  Trying to get property 'name' of non-object in F:\OSPanel\domains\wp-extramed.loc\wp-content\themes\extramed\front-page.php on line 140
+[16-Jul-2019 17:26:37 UTC] PHP Stack trace:
+[16-Jul-2019 17:26:37 UTC] PHP   1. {main}() F:\OSPanel\domains\wp-extramed.loc\index.php:0
+[16-Jul-2019 17:26:37 UTC] PHP   2. require() F:\OSPanel\domains\wp-extramed.loc\index.php:17
+[16-Jul-2019 17:26:37 UTC] PHP   3. require_once() F:\OSPanel\domains\wp-extramed.loc\wp-blog-header.php:19
+[16-Jul-2019 17:26:37 UTC] PHP   4. include() F:\OSPanel\domains\wp-extramed.loc\wp-includes\template-loader.php:78
+[16-Jul-2019 17:26:37 UTC] PHP 
+[16-Jul-2019 17:26:37 UTC] PHP Dump $_SERVER
+[16-Jul-2019 17:26:37 UTC] PHP    $_SERVER['REMOTE_ADDR'] = '127.0.0.1'
+[16-Jul-2019 17:26:37 UTC] PHP    $_SERVER['REQUEST_METHOD'] = 'GET'
+[16-Jul-2019 17:26:37 UTC] PHP Dump $_SESSION
+[16-Jul-2019 17:26:37 UTC] PHP    $_SESSION['*'] is undefined
+[16-Jul-2019 17:26:37 UTC] PHP Dump $_REQUEST
+[16-Jul-2019 17:26:37 UTC] PHP 

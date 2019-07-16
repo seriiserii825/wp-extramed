@@ -13,20 +13,20 @@
 					<li>
 						<ul class="submenu time-table">
 							<li class="tit">
-								<h5><?php  echo carbon_get_theme_option('crb_timer_title'); ?></h5>
+								<h5><?php  echo carbon_get_the_post_meta('crb_timer_title'); ?></h5>
 							</li>
 							<li><span class="day">Luni - Vineri</span> <span class="divider">-</span>
 								<span class="time">
-									<?php  echo substr(carbon_get_theme_option('crb_monday_start'), 0, 5); ?> -
-									<?php  echo substr(carbon_get_theme_option('crb_monday_end'), 0, 5); ?>
+									<?php  echo substr(carbon_get_the_post_meta('crb_monday_start'), 0, 5); ?> -
+									<?php  echo substr(carbon_get_the_post_meta('crb_monday_end'), 0, 5); ?>
 								</span>
 							</li>
 							<li><span class="day">Simbata</span> <span class="divider">-</span> <span class="time">
-								<?php  echo substr(carbon_get_theme_option('crb_saturday_start'), 0, 5); ?> -
-								<?php  echo substr(carbon_get_theme_option('crb_saturday_end'), 0, 5); ?></span></li>
+								<?php  echo substr(carbon_get_the_post_meta('crb_saturday_start'), 0, 5); ?> -
+								<?php  echo substr(carbon_get_the_post_meta('crb_saturday_end'), 0, 5); ?></span></li>
 							<li><span class="day">Duminica</span> <span class="divider">-</span> <span class="time">
-								<?php  echo substr(carbon_get_theme_option('crb_sunday_start'), 0, 5); ?> -
-								<?php  echo substr(carbon_get_theme_option('crb_sunday_end'), 0, 5); ?></span>
+								<?php  echo substr(carbon_get_the_post_meta('crb_sunday_start'), 0, 5); ?> -
+								<?php  echo substr(carbon_get_the_post_meta('crb_sunday_end'), 0, 5); ?></span>
 							</li>
 						</ul>
 						<div class="link"><img class="time-tab" src="<?php echo get_template_directory_uri(); ?>/assets/images/timetable-menu.png" alt=""></div>
@@ -76,7 +76,7 @@
 						<div class="services-one_content">
 
 						<?php $amb_stat_posts = new WP_Query([
-							'cat' => '4,5',
+							'cat' => '6,5',
 							'posts_per_page' => -1,
 						]); ?>
 
