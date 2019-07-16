@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="793b5e27-1ce1-4b17-a103-9ea2eeb2fc04" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/extramed/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/extramed/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/extramed/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/extramed/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/extramed/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/extramed/page.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/extramed/screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/extramed/screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/extramed/inc/carbon-fields/carbon-fields.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/extramed/inc/carbon-fields/carbon-fields.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,8 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/extramed/inc/carbon-fields/carbon-fields.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="6" column="94" selection-start-line="6" selection-start-column="94" selection-end-line="6" selection-end-column="94" />
+            <state relative-caret-position="594">
+              <caret line="79" selection-start-line="79" selection-end-line="79" />
               <folding>
                 <element signature="e#7#35#0#PHP" expanded="true" />
               </folding>
@@ -64,10 +59,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/wp-content/themes/extramed/inc/carbon-fields/carbon-fields.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/extramed/header.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/extramed/functions.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/extramed/classes/Mobile_Menu_Walker.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/extramed/inc/carbon-fields/carbon-fields.php" />
       </list>
     </option>
   </component>
@@ -183,17 +178,18 @@
       <option name="presentableId" value="Default" />
       <updated>1563285917421</updated>
       <workItem from="1563285918685" duration="3385000" />
-      <workItem from="1563291529452" duration="35000" />
+      <workItem from="1563291529452" duration="979000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3420000" />
+    <option name="totallyTimeSpent" value="4364000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25349087" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25349087" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -261,8 +257,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/extramed/inc/carbon-fields/carbon-fields.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="6" column="94" selection-start-line="6" selection-start-column="94" selection-end-line="6" selection-end-column="94" />
+        <state relative-caret-position="594">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
           <folding>
             <element signature="e#7#35#0#PHP" expanded="true" />
           </folding>
